@@ -28,9 +28,9 @@ module "eks" {
     default = {
       name           = "${var.project}-ng"
       instance_types = ["c7i-flex.large"]
-      min_size       = 1
-      max_size       = 3
-      desired_size   = 2
+      min_size       = 3
+      max_size       = 5
+      desired_size   = 3
 
       subnet_ids = local.private_subnet_ids
 
