@@ -3,6 +3,11 @@
 # Switch to root user (though user data already runs as root)
 sudo -i
 
+# install java
+sudo apt update
+sudo apt install fontconfig openjdk-21-jre -y
+java -version
+
 # Install Jenkins
 wget -O /etc/apt/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key
